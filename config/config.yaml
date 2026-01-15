@@ -28,16 +28,8 @@ platforms:
     name: "今日头条"
   - id: "baidu"
     name: "百度热搜"
-  - id: "wallstreetcn-hot"
-    name: "华尔街见闻"
-  - id: "thepaper"
-    name: "澎湃新闻"
   - id: "bilibili-hot-search"
     name: "bilibili 热搜"
-  - id: "cls-hot"
-    name: "财联社热门"
-  - id: "ifeng"
-    name: "凤凰网"
   - id: "tieba"
     name: "贴吧"
   - id: "weibo"
@@ -46,8 +38,7 @@ platforms:
     name: "抖音"
   - id: "zhihu"
     name: "知乎"
-  - id: "kuaishou"
-    name: "快手"
+
 
 
 # ===============================================================
@@ -282,14 +273,14 @@ ai_analysis:
   #   - gemini: Google Gemini
   #   - custom: 自定义 OpenAI 兼容接口（需填写完整 base_url）
   provider: "deepseek"              # 提供商
-  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "sk-34d5bd904c8948be97e592b822ebed1e"                       # API Key（建议使用环境变量 AI_API_KEY）
 
   model: "deepseek-chat"            # 模型名称
                                     # DeepSeek: deepseek-chat, deepseek-reasoner
                                     # OpenAI: o3-mini, o1, gpt-4o
                                     # Gemini: gemini-2.5-flash, gemini-2.5-pro
 
-  base_url: ""                      # 完整 API 地址（可选）
+  base_url: "https://api.deepseek.com"                      # 完整 API 地址（可选）
                                     # 留空则使用提供商默认端点
                                     # 其他提供商必须填写完整 URL
                                     # 示例: https://api.openai.com/v1/chat/completions
